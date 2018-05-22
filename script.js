@@ -111,6 +111,7 @@ $(document).ready(function() {
     var requestUrl = apiRoot + 'deleteTask';
 
     $.ajax({
+      contentType: "application/json; charset=utf-8",
       url: requestUrl + '/?' + $.param({
         taskId: taskId
       }),
